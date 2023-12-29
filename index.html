@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="mx-auto container">
+      <!-- Progress Form -->
+      <form
+        id="progress-form"
+        class="p-4 progress-form"
+        action="https://httpbin.org/post"
+        lang="en"
+        novalidate
+      >
+        <!-- Step Navigation -->
+        <div
+          class="d-flex align-items-start mb-3 sm:mb-5 progress-form__tabs"
+          role="tablist"
+        >
+          <button
+            id="progress-form__tab-1"
+            class="flex-1 px-0 pt-2 progress-form__tabs-item"
+            type="button"
+            role="tab"
+            aria-controls="progress-form__panel-1"
+            aria-selected="true"
+          >
+            <span class="d-block step" aria-hidden="true">
+              <span class="sm:d-none">of 5</span></span
+            >
+            Personal Details
+          </button>
+          <button
+            id="progress-form__tab-2"
+            class="flex-1 px-0 pt-2 progress-form__tabs-item"
+            type="button"
+            role="tab"
+            aria-controls="progress-form__panel-2"
+            aria-selected="false"
+            tabindex="-1"
+            aria-disabled="true"
+          >
+            <span class="d-block step" aria-hidden="true"
+              ><span class="sm:d-none">of 5</span></span
+            >
+            Parmanent Address
+          </button>
+          <button
+            id="progress-form__tab-3"
+            class="flex-1 px-0 pt-2 progress-form__tabs-item"
+            type="button"
+            role="tab"
+            aria-controls="progress-form__panel-3"
+            aria-selected="false"
+            tabindex="-1"
+            aria-disabled="true"
+          >
+            <span class="d-block step" aria-hidden="true"
+              ><span class="sm:d-none">of 5</span></span
+            >
+            Academic Qualification
+          </button>
+          <button
+            id="progress-form__tab-5"
+            class="flex-1 px-0 pt-2 progress-form__tabs-item"
+            type="button"
+            role="tab"
+            aria-controls="progress-form__panel-4"
+            aria-selected="false"
+            tabindex="-1"
+            aria-disabled="true"
+          >
+            <span class="d-block step" aria-hidden="true"
+              ><span class="sm:d-none">of 5</span></span
+            >
+            Area of Expertise
+          </button>
+          <button
+            id="progress-form__tab-4"
+            class="flex-1 px-0 pt-2 progress-form__tabs-item"
+            type="button"
+            role="tab"
+            aria-controls="progress-form__panel-5"
+            aria-selected="false"
+            tabindex="-1"
+            aria-disabled="true"
+          >
+            <span class="d-block step" aria-hidden="true"
+              ><span class="sm:d-none">of 5</span></span
+            >
+            Upload Documents
+          </button>
+        </div>
+        <!-- / End Step Navigation -->
+
+        <!-- Step 1 -->
+        <section
+          id="progress-form__panel-1"
+          role="tabpanel"
+          aria-labelledby="progress-form__tab-1"
+          tabindex="0"
+        >
+          <div class="sm:d-grid sm:grid-col-2 sm:mt-3">
+            <div class="mt-3 sm:mt-0 form__field">
+              <label for="first-name">
+                First Name
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <input
+                id="first-name"
+                type="text"
+                name="firstname"
+                autocomplete="given-name"
+                required
+              />
+            </div>
+            <div class="mt-3 sm:mt-0 form__field">
+              <label for="middle-name">
+                Middle Name
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <input
+                id="middle-name"
+                type="text"
+                name="middlenamename"
+                autocomplete="family-name"
+                required
+              />
+            </div>
+
+            <div class="mt-3 sm:mt-0 form__field">
+              <label for="last-name">
+                Last name
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <input
+                id="last-name"
+                type="text"
+                name="lastname"
+                autocomplete="family-name"
+                required
+              />
+            </div>
+
+            <div class="mt-3 sm:mt-0 form__field">
+              <label for="Gender">
+                Gender
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <select
+                class="form-select custom-dark-border"
+                id="genderSelect"
+                name="gender"
+              >
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="mt-3 form__field">
+              <label for="mydate">
+                Date of Birth
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <input
+                id="mydate"
+                type="date"
+                name="date"
+                autocomplete="date"
+                inputmode="date"
+                required
+              />
+            </div>
+
+            <div class="mt-3 form__field">
+              <label for="myNationality">
+                Nationality
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <input
+                id="myNationality"
+                type="email"
+                name="Nationality"
+                autocomplete="country-name"
+                required
+              />
+            </div>
+
+            <div class="mt-3 form__field">
+              <label for="email-address">
+                Email address
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <input
+                id="email-address"
+                type="email"
+                name="emailaddress"
+                autocomplete="email"
+                inputmode="email"
+                required
+              />
+            </div>
+
+            <div class="mt-3 form__field">
+              <label for="phone-number">
+                Phone number
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <input
+                id="phone-number"
+                type="tel"
+                name="phonenumber"
+                autocomplete="tel"
+                inputmode="tel"
+                required
+              />
+            </div>
+          </div>
+          <div
+            class="d-flex align-items-center justify-center sm:justify-end mt-4 sm:mt-5"
+          >
+            <button type="button" data-action="next">Continue</button>
+          </div>
+        </section>
+        <!-- / End Step 1 -->
+
+        <!-- Step 2 -->
+        <section
+          id="progress-form__panel-2"
+          role="tabpanel"
+          aria-labelledby="progress-form__tab-2"
+          tabindex="0"
+          hidden
+        >
+          <div class="sm:d-grid sm:grid-col-3 sm:mt-3">
+            <div class="mt-3 md-2form-control-sm">
+              <label for="address">
+                Address
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <input
+                id="address"
+                type="text"
+                name="address"
+                autocomplete="shipping address-line1"
+                required
+              />
+            </div>
+
+            <div class="mt-3 form__field">
+              <label for="address-2"> Province </label>
+              <input
+                id="address-2"
+                type="text"
+                name="address-2"
+                autocomplete="shipping address-line2"
+              />
+            </div>
+
+            <div class="mt-3 form__field">
+              <label for="address-2"> District </label>
+              <input
+                id="address-2"
+                type="text"
+                name="address-2"
+                autocomplete="shipping address-line2"
+              />
+            </div>
+
+            <div class="mt-3 form__field">
+              <label for="address-city">
+                Local Governance
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <input
+                id="address-city"
+                type="text"
+                name="addresscity"
+                autocomplete="shipping address-level2"
+                required
+              />
+            </div>
+
+            <div class="mt-3 sm:mt-2 form__field">
+              <label for="address-state">
+                Province
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <input
+                type="text"
+                id="address-state"
+                name="addressstate"
+                autocomplete="shipping address-level3"
+                required
+              />
+            </div>
+
+            <div class="mt-3 sm:mt-2 form__field">
+              <label for="address-zip">
+                Ward No
+                <span data-required="true" aria-hidden="true"></span>
+              </label>
+              <input
+                id="address-zip"
+                type="text"
+                name="addresszip"
+                autocomplete="shipping postal-code"
+                inputmode="numeric"
+                required
+              />
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column-reverse sm:flex-row align-items-center justify-center sm:justify-end mt-4 sm:mt-5"
+          >
+            <button
+              type="button"
+              class="mt-1 sm:mt-0 button--simple"
+              data-action="prev"
+            >
+              Back
+            </button>
+            <button type="button" data-action="next">Continue</button>
+          </div>
+        </section>
+        <!-- / End Step 2 -->
+
+        <!-- Step 3 -->
+        <section
+          id="progress-form__panel-3"
+          role="tabpanel"
+          aria-labelledby="progress-form__tab-3"
+          tabindex="0"
+          hidden
+        >
+          <div class="sm:d-grid sm:grid-col-3 sm:mt-3">
+            <div class="mt-3 form__field">
+              <label for="product-satisfaction">
+                Highest Degree
+                <span data-required="true" aria-hidden="true"></span>
+                <input
+                  id="address-zip"
+                  type="text"
+                  name="addresszip"
+                  autocomplete="shipping postal-code"
+                  inputmode="numeric"
+                  required
+                />
+              </label>
+            </div>
+            <div class="mt-3 form__field">
+              <label for="product-satisfaction">
+                Subject
+                <span data-required="true" aria-hidden="true"></span>
+                <input
+                  id="address-zip"
+                  type="text"
+                  name="addresszip"
+                  autocomplete="shipping postal-code"
+                  inputmode="numeric"
+                  required
+                />
+              </label>
+            </div>
+            <div class="mt-3 form__field">
+              <label for="product-satisfaction">
+                University
+                <span data-required="true" aria-hidden="true"></span>
+                <input
+                  id="address-zip"
+                  type="text"
+                  name="addresszip"
+                  autocomplete="shipping postal-code"
+                  inputmode="numeric"
+                  required
+                />
+              </label>
+            </div>
+            <div class="mt-3 form__field">
+              <label for="product-satisfaction">
+                Year of Completion
+                <span data-required="true" aria-hidden="true"></span>
+                <input
+                  id="address-zip"
+                  type="text"
+                  name="addresszip"
+                  autocomplete="shipping postal-code"
+                  inputmode="numeric"
+                  required
+                />
+              </label>
+            </div>
+            <div class="mt-3 form__field">
+              <label for="product-satisfaction">
+                Specialization
+                <span data-required="true" aria-hidden="true"></span>
+                <input
+                  id="address-zip"
+                  type="text"
+                  name="addresszip"
+                  autocomplete="shipping postal-code"
+                  inputmode="numeric"
+                  required
+                />
+              </label>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column-reverse sm:flex-row align-items-center justify-center sm:justify-end mt-4 sm:mt-5"
+          >
+            <button
+              type="button"
+              class="mt-1 sm:mt-0 button--simple"
+              data-action="prev"
+            >
+              Back
+            </button>
+            <button type="button" data-action="next">Continue</button>
+          </div>
+        </section>
+
+        <!-- Step 4 -->
+        <section
+          id="progress-form__panel-3"
+          role="tabpanel"
+          aria-labelledby="progress-form__tab-3"
+          tabindex="0"
+          hidden
+        >
+          <fieldset id="product-purchase" class="mt-3 form__field">
+            <legend>
+              Select the areas of expertise that best fit to your experience and
+              expertise
+            </legend>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="A" />
+              <span>Information Technology and allied subjects</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="B" />
+              <span
+                >Engineering ( Computer Engineering , Civil Engineering,
+                Electrical Engineering , Mechanical Engineering, etc)</span
+              >
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Agriculture</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Tourism, Eco-tourism</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Forestry</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Curriculum Development</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Research Specializations</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Urban Planning & Management</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>International Relation</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Student affairs & Community Services</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Medical Counsellor</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Mental Health Counsellor</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Entrepreneurship and Innovation</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Public Communication and Media Relations</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span
+                >Work place Harassment training and code of conduct
+                preparation</span
+              >
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span
+                >Leadership development/Team building /Interpersonal
+                Communication Skills</span
+              >
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Proposal and Report Writing</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="checkbox" name="product-purchase" value="C" />
+              <span>Other:</span>
+            </label>
+          </fieldset>
+          <fieldset id="product-purchase" class="mt-3 form__field">
+            <legend>Experience in the relevant field</legend>
+            <label class="form__choice-wrapper">
+              <input type="radio" name="product-purchase" value="C" />
+              <span>Less than Two Years</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="radio" name="product-purchase" value="C" />
+              <span>Two to Five Years</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="radio" name="product-purchase" value="C" />
+              <span>Six to Ten Years</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="radio" name="product-purchase" value="C" />
+              <span>Eleven to Fifteen Years</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="radio" name="product-purchase" value="C" />
+              <span>Sixteen to Twenty Years</span>
+            </label>
+            <label class="form__choice-wrapper">
+              <input type="radio" name="product-purchase" value="C" />
+              <span>Above Twenty Years</span>
+            </label>
+          </fieldset>
+          <div
+            class="d-flex flex-column-reverse sm:flex-row align-items-center justify-center sm:justify-end mt-4 sm:mt-5"
+          >
+            <button
+              type="button"
+              class="mt-1 sm:mt-0 button--simple"
+              data-action="prev"
+            >
+              Back
+            </button>
+            <button type="button" data-action="next">Continue</button>
+          </div>
+        </section>
+        <!-- / End Step 4 -->
+
+        <!--Step-5-->
+        <section
+          id="progress-form__panel-3"
+          role="tabpanel"
+          aria-labelledby="progress-form__tab-3"
+          tabindex="0"
+          hidden
+        >
+          <fieldset id="product-purchase" class="mt-3 form__field">
+            <legend>
+              Citizenship or Passport or Any ID Card Issued by Government
+            </legend>
+            <label class="form__choice-wrapper">
+              <input type="file" name="product-purchase" value="A" />
+            </label>
+          </fieldset>
+          <fieldset id="product-purchase" class="mt-3 form__field">
+            <legend>Add Updated CV</legend>
+            <label class="form__choice-wrapper">
+              <input type="file" name="product-purchase" value="A" />
+            </label>
+          </fieldset>
+          <fieldset id="product-purchase" class="mt-3 form__field">
+            <legend>Add Cover Letter</legend>
+            <label class="form__choice-wrapper">
+              <input type="file" name="product-purchase" value="A" />
+            </label>
+          </fieldset>
+          <div
+            class="d-flex flex-column-reverse sm:flex-row align-items-center justify-center sm:justify-end mt-4 sm:mt-5"
+          >
+            <button
+              type="button"
+              class="mt-1 sm:mt-0 button--simple"
+              data-action="prev"
+            >
+              Back
+            </button>
+            <button type="submit">Submit</button>
+          </div>
+        </section>
+        <!--end Step-5-->
+
+        <!-- Thank You -->
+        <section id="progress-form__thank-you" hidden>
+          <p>Thank you for your submission!</p>
+          <p>
+            We appreciate you contacting us. One of our team members will get
+            back to you very&nbsp;soon.
+          </p>
+        </section>
+        <!-- / End Thank You -->
+      </form>
+      <!-- / End Progress Form -->
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
